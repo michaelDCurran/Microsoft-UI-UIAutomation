@@ -2375,7 +2375,7 @@ namespace UiaOperationAbstraction
                 [&]() { index += 1; } /* modification */,
                 [&]() /* body */
                 {
-                    const auto element = array.GetAt(index);
+                    auto element = array.GetAt(index);
                     body(element);
                 });
         }
